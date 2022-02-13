@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_print_str.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nouahhab <nouahhab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/02 21:17:41 by nouahhab          #+#    #+#             */
-/*   Updated: 2022/02/03 00:02:15 by nouahhab         ###   ########.fr       */
+/*   Created: 2022/02/02 21:29:21 by nouahhab          #+#    #+#             */
+/*   Updated: 2022/02/02 21:33:51 by nouahhab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <unistd.h>
-# include <stdarg.h>
+#include "ft_printf.h"
 
-int		ft_printf(const char *str, ...);
-void 	ft_print_char (char c,int *count);
-void	ft_print_str (char *str, int *count);
-void	ft_printf_hex(unsigned int n, char c, int count);
-
+void ft_print_str (char *str, int *count)
+{
+	int	i;
+	
+	if (!str)
+		return ;
+	i = 0;
+	while (s[i])
+	{
+		ft_print_char(s[i], &count);
+		i++;
+	}
+	(*count)++;
+}
