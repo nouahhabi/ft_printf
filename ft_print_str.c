@@ -6,23 +6,22 @@
 /*   By: nouahhab <nouahhab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 21:29:21 by nouahhab          #+#    #+#             */
-/*   Updated: 2022/02/02 21:33:51 by nouahhab         ###   ########.fr       */
+/*   Updated: 2022/03/18 00:31:11 by nouahhab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void ft_print_str (char *str, int *count)
+void	ft_print_str(char *str, int *count)
 {
 	int	i;
-	
+
 	if (!str)
-		return ;
+		str = "(null)";
 	i = 0;
-	while (s[i])
+	while (str[i])
 	{
-		ft_print_char(s[i], &count);
+		ft_print_char(str[i], count);
 		i++;
 	}
-	(*count)++;
 }

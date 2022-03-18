@@ -6,13 +6,13 @@
 /*   By: nouahhab <nouahhab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 21:17:25 by nouahhab          #+#    #+#             */
-/*   Updated: 2022/02/02 21:34:41 by nouahhab         ###   ########.fr       */
+/*   Updated: 2022/03/18 00:09:29 by nouahhab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_print_char (char c,int *count)
+void	ft_print_char(char c, int *count)
 {
 	write(1, &c, 1);
 	(*count)++;
